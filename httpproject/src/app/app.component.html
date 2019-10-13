@@ -1,0 +1,6 @@
+<button (click)="getPosts()"></button>
+
+<div *ngFor="let post of posts | async">
+  {{post | json}}
+
+</div>
